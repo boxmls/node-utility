@@ -1,0 +1,43 @@
+{
+  "name": "boxmls-utility",
+  "version": "0.3.0",
+  "description": "BoxMLS Common Functions Utility",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "MOCHA_TEST=true DEBUG=boxmls-utility mocha --ui exports --reporter list"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyPropertyOffice/node-utility.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MyPropertyOffice/node-utility/issues"
+  },
+  "homepage": "https://github.com/MyPropertyOffice/node-utility#readme",
+  "config": {},
+  "dependencies": {
+    "async": "^1.4.2",
+    "async-disk-cache": "^1.3.3",
+    "aws-sdk": "^2.258.1",
+    "dateformat": "^3.0.3",
+    "debug": "^3.1.0",
+    "ejs": "^2.3.4",
+    "elasticsearch": "^8.1.0",
+    "email-templates": "^2.0.1",
+    "html-excerpt": "^0.1.0",
+    "lodash": "^4.17.10",
+    "mandrill-api": "^1.0.45",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "node-cache": "^4.2.0",
+    "s3": "^4.4.0",
+    "slack-node": "^0.2.0",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1",
+    "should": "^13.2.1"
+  }
+}
