@@ -8,5 +8,5 @@
 To add the module to BoxMLS service ( to install module and add it to `package.json`):
  
 ```
-npm install --save boxmls/utility@0.3.0
+npm install --save https://github.com/boxmls/node-utility.git#0.3.0
 ```
