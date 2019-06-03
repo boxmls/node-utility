@@ -1,3 +1,6 @@
+### 0.3.1
+* Added `setupElasticsearchMapping` function
+
 ### 0.2.21
 * Extended `mail` utility with `MLS` env. Needed for detecting time zones.
 
