@@ -1,3 +1,6 @@
+### 0.3.4
+* Fixed syntax errors.
+
 ### 0.3.3
 * Removed deprecated and extra functions, utilities.
 * Cleaned up `utility-mail`
