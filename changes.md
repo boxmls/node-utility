@@ -1,3 +1,6 @@
+### 0.3.5
+* Fixed utility-mail with correct Mandrill keys env.
+
 ### 0.3.4
 * Fixed syntax errors.
 
