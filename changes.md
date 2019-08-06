@@ -1,6 +1,7 @@
-### 0.3.9
+### 0.3.10
 * Fixed the path to static email templates
 * Fixed the bug on sending error notification when slack envs are not set
+* Fixed the bug on error from Mandrill API.
 
 ### 0.3.7
 * Improvements to Mail utility.
