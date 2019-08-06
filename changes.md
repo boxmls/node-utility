@@ -1,3 +1,7 @@
+### 0.3.9
+* Fixed the path to static email templates
+* Fixed the bug on sending error notification when slack envs are not set
+
 ### 0.3.7
 * Improvements to Mail utility.
 * Improvements to scrollResults function.
