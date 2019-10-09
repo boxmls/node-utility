@@ -1,4 +1,5 @@
-### 0.3.10
+### 0.3.11
+* Added `boxmls-firebase-admin` module as wrapper for all `process.env` variables, so value(s) can be retrieved from firebase admin database id `process.env`(s) is not defined.
 * Fixed the path to static email templates
 * Fixed the bug on sending error notification when slack envs are not set
 * Fixed the bug on error from Mandrill API.

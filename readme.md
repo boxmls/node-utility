@@ -2,22 +2,22 @@
 
 # Node utility
 
-* The set of general project helper functions and utilities ( e.g., AWS utility )
-* Stores general BoxMLS configuration.
+The set of general project helper functions and utilities ( e.g., AWS utility )
 
 ## Installation
 
 To add the module to BoxMLS service ( to install module and add it to `package.json`):
  
 ```
-npm install --save https://github.com/boxmls/node-utility.git#0.3.10
+npm install --save https://github.com/boxmls/node-utility.git#0.3.11
 ```
 
 ## Process Environments
 
 * `SLACK_WEBHOOK_URI`
 * `SLACK_WEBHOOK_CHANNEL`
-* `MANDRILL_KEY_LIVE`
+* `MANDRILL_KEY_PRODUCTION`
+* `MANDRILL_KEY_DEVELOPMENT`
 * `ALERT_EMAIL_TO`
 * `ALERT_EMAIL_FROM`
 * `NODE_ENV`. Enums: `production`,`development`
