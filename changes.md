@@ -1,4 +1,4 @@
-### 0.3.12
+### 0.3.13
 * Added CirceCI tests.
 * Added `boxmls-firebase-admin` module as wrapper for all `process.env` variables, so value(s) can be retrieved from firebase admin database id `process.env`(s) is not defined.
 * Fixed the path to static email templates
