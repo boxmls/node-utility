@@ -1,10 +1,10 @@
 {
   "name": "boxmls-utility",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "BoxMLS Common Functions Utility",
   "main": "lib/index.js",
   "scripts": {
-    "test": "MOCHA_TEST=true DEBUG=boxmls-utility mocha --ui exports --reporter list"
+    "test": "MOCHA_TEST=true NODE_ENV=development DEBUG=boxmls-utility,boxmls-utility-test mocha --ui exports --reporter list"
   },
   "repository": {
     "type": "git",
