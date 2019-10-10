@@ -30,7 +30,7 @@ module.exports = {
     const firebaseAdmin = firebase.init(gceCert);
 
     firebaseAdmin.ready(()=>{
-      firebaseAdmin.exit(false,(err)=>{
+      firebaseAdmin.exit((err)=>{
         done(err);
       });
     });
