@@ -36,7 +36,8 @@ Module `boxmls-firebase-admin` environments:
 * `getS3( options )`. Returns S3 Wrapper object for AWS S3 node module
 * `getHash( object )`. Returns sha1 hash for object
 * `sendError( Error, details, callback )`. Sends detailed Error information to email (and Slack. Optional).
-* `scrollResults( query, documentHandler, done )`. Handler For Scrolling through large dataset with simple callback system
+* `scrollResults( query, documentHandler, callback )`. Handler For Scrolling through large dataset with simple callback system
+* `setupElasticsearchMapping( options, callback )`. Creates index and its mapping from file(s).
 
 # Support
 
