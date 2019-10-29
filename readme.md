@@ -11,7 +11,7 @@ The set of general project helper functions and utilities ( e.g., AWS utility )
 To add the module to BoxMLS service ( to install module and add it to `package.json`):
  
 ```
-npm install --save https://github.com/boxmls/node-utility.git#0.3.15
+npm install --save https://github.com/boxmls/node-utility.git#0.4.0
 ```
 
 ## Process Environments
@@ -29,12 +29,14 @@ Module `boxmls-firebase-admin` environments:
 * `FIREBASE_ADMIN_DB`. Optional. Database name which is used to generate Database URL using the pattern `https://{DATABASENAME}.firebaseio.com`.
 * `FIREBASE_ADMIN_REF`. Optional. Database Resource Referal.
 * `FIREBASE_CACHE_DIR`. Optional. The directory where cache file with firebase data will be stored.
+* `FIREBASE_ADMIN_COLLECTION_SUFFIX`. Optional. It defines suffix for collection names. So it may be used to split environment scopes. If it's not defined, suffix will be got from `GIT_BRANCH` env if it exists.
 
 ## Functions
 
 * `createMail( options )`. Initializes Mail tuility to send emails via Mandrill
 * `getS3( options )`. Returns S3 Wrapper object for AWS S3 node module
 * `getHash( object )`. Returns sha1 hash for object
+* `getReferrer`. Detects referrer URI in req object by parsing headers and parses referrer URI to find subdomain and brand.
 * `sendError( Error, details, callback )`. Sends detailed Error information to email (and Slack. Optional).
 * `scrollResults( query, documentHandler, callback )`. Handler For Scrolling through large dataset with simple callback system
 * `setupElasticsearchMapping( options, callback )`. Creates index and its mapping from file(s).

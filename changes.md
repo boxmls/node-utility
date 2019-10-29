@@ -1,3 +1,6 @@
+### 0.4.0
+* Added `getReferrer` function which uses Firebase Firestore to detect brand for a referrer.
+
 ### 0.3.15
 * Added CirceCI tests.
 * Added `boxmls-firebase-admin` module as wrapper for all `process.env` variables, so value(s) can be retrieved from firebase admin database id `process.env`(s) is not defined.
