@@ -1,3 +1,6 @@
+### 0.4.1
+* Updated getReferrer method with supporting a full path as fallback.
+
 ### 0.4.0
 * Added `getReferrer` function which uses Firebase Firestore to detect brand for a referrer.
 
