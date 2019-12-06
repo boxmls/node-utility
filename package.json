@@ -1,6 +1,6 @@
 {
   "name": "boxmls-utility",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "BoxMLS Common Functions Utility",
   "main": "lib/index.js",
   "scripts": {
