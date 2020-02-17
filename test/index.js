@@ -130,7 +130,8 @@ module.exports = {
         }
       });
     }
+  },
 
-  }
+  'check elasticsearch-cache library': require( './functional/elasticsearch-cache' )
   
 };

@@ -1,3 +1,9 @@
+### 0.5.0
+* Implemented `elasticsearch-cache` library.
+
+### 0.4.2
+* Updated `node-firebase-admin` to `0.2.4`
+
 ### 0.4.1
 * Updated getReferrer method with supporting a full path as fallback.
 
