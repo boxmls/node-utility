@@ -40,7 +40,7 @@ Module `boxmls-firebase-admin` environments:
 * `sendError( Error, details, callback )`. Sends detailed Error information to email (and Slack. Optional).
 * `scrollResults( query, documentHandler, callback )`. Handler For Scrolling through large dataset with simple callback system
 * `setupElasticsearchMapping( options, callback )`. Creates index and its mapping from file(s).
-* `getElasticsearchCache( client, ttl )`. Returns ElasticSearch cache object
+* `getElasticsearchCache( options )`. Returns ElasticSearch cache object
 
 # Support
 
