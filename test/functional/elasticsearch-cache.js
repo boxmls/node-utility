@@ -4,7 +4,7 @@
  */
 
 const _ = require('lodash');
-let ElasticsearchCache = require('root-require')('lib/elasticsearch-cache.js');
+let ElasticsearchCache = require('root-require')('lib/index.js').getElasticSearchCache();
 const client = require('root-require')('lib/elasticsearch')();
 
 
