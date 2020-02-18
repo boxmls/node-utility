@@ -4,11 +4,8 @@
  */
 
 const _ = require('lodash');
-let ElasticsearchCache = require('root-require')('lib/index.js').getElasticSearchCache();
+let cache = require('root-require')('lib/index.js').getElasticSearchCache();
 const client = require('root-require')('lib/elasticsearch')();
-
-
-let cache = new ElasticsearchCache();
 
 const cacheKey = 'mochaTest:cache';
 
