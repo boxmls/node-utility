@@ -1,3 +1,7 @@
+### 0.5.3
+* Added raw `key` value into cache document for `elasticsearch-cache` library.
+* Re-ordered cache document items for `elasticsearch-cache` library.
+
 ### 0.5.2
 * Fixed `elasticsearch-cache` library data types converter.
 
