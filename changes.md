@@ -1,3 +1,7 @@
+### 0.5.1
+* Fixed `buildIdHash` and `set` methods of `elasticsearch-cache` library.
+* Updated logs.
+
 ### 0.5.0
 * Implemented `elasticsearch-cache` library.
 
