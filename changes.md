@@ -1,3 +1,6 @@
+### 0.5.2
+* Fixed `elasticsearch-cache` library data types converter.
+
 ### 0.5.1
 * Fixed `buildIdHash` and `set` methods of `elasticsearch-cache` library.
 * Updated logs.
