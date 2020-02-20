@@ -1,3 +1,8 @@
+### 0.5.4
+* Added condition to prevent manipulates with cache without `GIT_NAME` and `GIT_BRANCH` ENVs.
+* Added `GIT_NAME` and `GIT_BRANCH` environment variables to `circleci` config. 
+* Re-ordered cache document items for `elasticsearch-cache` library, moved body item to bottom to easy debug.
+
 ### 0.5.3
 * Added raw `key` value into cache document for `elasticsearch-cache` library.
 * Re-ordered cache document items for `elasticsearch-cache` library.
