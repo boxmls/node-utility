@@ -10,6 +10,8 @@ jobs:
 
         environment:
           - ES_ADDRESS: "localhost:9200"
+          - GIT_NAME: "circleci"
+          - GIT_BRANCH: "circleci"
 
       - image: elasticsearch:2.4.2
 
