@@ -1,3 +1,7 @@
+### 0.5.5
+* Replaced `node-cache` with `elasticsearch-cache` internal library for `getReferrer` request.
+* Cleaned up `package.json`, removed `md5` and `node-cache` npm packages since it not using anymore. 
+
 ### 0.5.4
 * Added condition to prevent manipulates with cache without `GIT_NAME` and `GIT_BRANCH` ENVs.
 * Added `GIT_NAME` and `GIT_BRANCH` environment variables to `circleci` config. 

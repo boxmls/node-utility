@@ -1,6 +1,6 @@
 {
   "name": "boxmls-utility",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "BoxMLS Common Functions Utility",
   "main": "lib/index.js",
   "scripts": {
@@ -31,10 +31,8 @@
     "html-excerpt": "^0.1.0",
     "lodash": "^4.17.15",
     "mandrill-api": "^1.0.45",
-    "md5": "^2.2.1",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.26",
-    "node-cache": "^4.2.1",
     "root-require": "^0.3.1",
     "s3": "^4.4.0",
     "slack-node": "^0.2.0",
