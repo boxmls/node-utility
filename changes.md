@@ -1,3 +1,6 @@
+### 0.5.6
+* Prevent build URL parts details in case brand couldn't be detected for `getReferrer` request.
+
 ### 0.5.5
 * Replaced `node-cache` with `elasticsearch-cache` internal library for `getReferrer` request.
 * Cleaned up `package.json`, removed `md5` and `node-cache` npm packages since it not using anymore. 
