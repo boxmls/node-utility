@@ -1,3 +1,6 @@
+### 0.5.8
+* Fixed `flushServiceCache` method.
+
 ### 0.5.7
 * Added `flushServiceCache` method.
 * Cleaned up `set` method from unneeded fields of cache document. 
