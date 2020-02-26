@@ -1,3 +1,7 @@
+### 0.5.7
+* Added `flushServiceCache` method.
+* Cleaned up `set` method from unneeded fields of cache document. 
+
 ### 0.5.6
 * Prevent build URL parts details in case brand couldn't be detected for `getReferrer` request.
 
