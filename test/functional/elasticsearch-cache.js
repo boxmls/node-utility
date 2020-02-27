@@ -17,41 +17,15 @@ module.exports = {
       requestTimeout: 1000
     }, (error) => {
       if (error) {
-        console.trace('elasticsearch cluster is down!');
+        console.error('elasticsearch cluster is down!');
         done(error);
       } else {
-        console.log('Cluster are up and reachable!');
         done();
       }
     });
   },
 
-  "create elasticsearch index": function(done) {
-
-    this.timeout(6000);
-
-    client.indices.create( {
-      index: 'cache',
-      body: {
-        "aliases": {},
-        "mappings": {},
-        "settings": {
-          "index": {
-            "number_of_shards": "3",
-            "number_of_replicas": "1",
-            "version": {
-              "created": "2040299"
-            }
-          }
-        },
-        "warmers": {}
-      }
-    }, setTimeout(() =>{
-      done();
-    }, 5000));
-  },
-
-  "trying to retrieve cache": async function(){
+  "be sure that test cache document is not exist yet": async function(){
 
     this.timeout(5000);
 
@@ -67,7 +41,7 @@ module.exports = {
     });
   },
 
-  "set cache document": async function() {
+  "set test cache document": async function() {
 
     this.timeout(5000);
 
@@ -76,7 +50,6 @@ module.exports = {
     };
 
     await cache.set(cacheKey, payload).then(response => {
-      console.log('Successfully stored cache doc [%s]', cacheKey);
 
       response.should.have.property('ok', true);
     }, error => {
@@ -84,7 +57,23 @@ module.exports = {
     });
   },
 
-  "flushing cache document": async function(){
+  "trying to retrieve test cache after set": async function(){
+
+    this.timeout(5000);
+
+    await cache.get(cacheKey).then((response) => {
+
+      response.should.have.property('ok');
+
+      if (!_.get(response, 'ok')) {
+        response.should.have.property('err');
+      } else {
+        response.should.not.have.property('data', null);
+      }
+    });
+  },
+
+  "flushing a test cache document": async function(){
 
     this.timeout(5000);
 
@@ -94,6 +83,56 @@ module.exports = {
     }, error => {
       console.error(error);
     });
-  }
+  },
 
+  "trying to retrieve test cache document after flush": async function(){
+
+    this.timeout(5000);
+
+    await cache.get(cacheKey).then((response) => {
+
+      response.should.have.property('ok');
+
+      if (!_.get(response, 'ok')) {
+        response.should.have.property('err');
+      } else {
+        response.should.have.property('data', null);
+      }
+    });
+  },
+
+  "flushing all cache documents of service": async function(){
+
+    this.timeout(5000);
+
+    await cache.flushServiceCache().then((response) => {
+
+      response.should.have.property('ok', true);
+    }, error => {
+      console.error(error);
+    });
+  },
+
+  "checking if all cache documents of service were flushed": async function(){
+
+    this.timeout(5000);
+
+    client.search( {
+      index: 'cache',
+      type: 'cache',
+      body: {
+        "query": {
+          "match_all": {}
+        }
+      }
+    }, function ( error, response ) {
+
+      if( !error ) {
+        response.hits.should.have.property('total', 0);
+      } else {
+        console.error(error);
+      }
+
+    } );
+  }
 };

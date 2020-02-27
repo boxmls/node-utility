@@ -1,3 +1,7 @@
+### 0.6.0
+* Updated `elasticsearch-cache` mocha tests in terms of new functionality.
+* Updated `elasticsearch-cache` library, small fixes, added new comments, switched `console.error` to `debug`, updated `debug` messages.
+
 ### 0.5.9
 * Rebuilt `flushServiceCache` method.
 
