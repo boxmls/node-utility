@@ -1,3 +1,6 @@
+### 0.5.9
+* Rebuilt `flushServiceCache` method.
+
 ### 0.5.8
 * Fixed `flushServiceCache` method.
 
