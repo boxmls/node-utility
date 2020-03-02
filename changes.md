@@ -1,3 +1,6 @@
+### 0.6.1
+* Added `checkIfDisabled` method to `elasticsearch-cache` library to be able to disable cache logic with `ES_CACHE_DISABLED` env.
+
 ### 0.6.0
 * Updated `elasticsearch-cache` mocha tests in terms of new functionality.
 * Updated `elasticsearch-cache` library, small fixes, added new comments, switched `console.error` to `debug`, updated `debug` messages.
