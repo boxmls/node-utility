@@ -1,3 +1,6 @@
+### 0.6.2
+* Updated `boxmls-firebase-admin` npm module to `0.2.5`
+
 ### 0.6.1
 * Added `checkIfDisabled` method to `elasticsearch-cache` library to be able to disable cache logic with `ES_CACHE_DISABLED` env.
 
