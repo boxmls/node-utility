@@ -1,3 +1,6 @@
+### 0.6.4
+* Updated `boxmls-firebase-admin` npm module to `0.2.6`
+
 ### 0.6.3
 * Updated `flush` method of `elasticsearch-cache` to prevent removing of not existent documents.
 
