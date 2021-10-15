@@ -1,4 +1,7 @@
 ### 0.6.5
+* Updated `elasticsearch-cache` module to use Elastic Search version 6.8 and above.
+
+### 0.6.5
 * Updated `boxmls-firebase-admin` npm module to `0.2.7`
 * Added improvements to `getReferrer` function. Now it tries to detect valid BoxMLS referrer from the list.
 

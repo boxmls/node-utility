@@ -119,7 +119,6 @@ module.exports = {
 
     client.search( {
       index: 'cache',
-      type: 'cache',
       body: {
         "query": {
           "match_all": {}
