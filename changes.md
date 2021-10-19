@@ -1,4 +1,7 @@
-### 0.6.5
+### 0.6.8
+* Updated `node-utility` to use Elastic Search version 6.8.
+
+### 0.6.7
 * Updated `elasticsearch-cache` module to use Elastic Search version 6.8 and above.
 
 ### 0.6.5
