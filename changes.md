@@ -1,3 +1,5 @@
+### 0.7.1
+* Removed parameters `from` for ES query, as it is not supported since Elastic Search version 6.0.
 ### 0.6.8
 * Updated `node-utility` to use Elastic Search version 6.8.
 
