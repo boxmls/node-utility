@@ -1,3 +1,6 @@
+### 0.7.2
+* Fixed typo in Elastic Search request for Cache.
+* Prevented checking Referrer for `Liveness probe` requests 
 ### 0.7.1
 * Removed parameters `from` for ES query, as it is not supported since Elastic Search version 6.0.
 ### 0.6.8
