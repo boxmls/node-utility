@@ -1,3 +1,6 @@
+### 0.7.3
+* Updated `node-utility` to use Elastic Search version 7.15.
+
 ### 0.7.2
 * Fixed typo in Elastic Search request for Cache.
 * Prevented checking Referrer for `Liveness probe` requests 

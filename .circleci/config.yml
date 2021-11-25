@@ -13,7 +13,7 @@ jobs:
           - GIT_NAME: "circleci"
           - GIT_BRANCH: "circleci"
 
-      - image: elasticsearch:6.8.20
+      - image: elasticsearch:7.15.0
 
     working_directory: ~/repo
 
