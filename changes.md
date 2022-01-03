@@ -1,3 +1,5 @@
+### 0.7.4
+* Removed ENV `ES_ADDRESS` from the list of ENVs which we want to send in alert notification
 ### 0.7.3
 * Updated `node-utility` to use Elastic Search version 7.15.
 
